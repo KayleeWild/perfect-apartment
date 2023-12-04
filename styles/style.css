@@ -1,0 +1,33 @@
+/* 
+COLORS:
+White: #FFFFFF
+Black: #000000
+Silver: #B1AAA9
+Dusty Blue: #29596F
+Light Blue: #98E2EB
+
+FONTS:
+
+*/
+
+
+#color {
+    background-color: rgb(220, 22, 220, .3);
+    z-index: 1;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 10;
+}
+
+#color img {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+
+#image-box {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
