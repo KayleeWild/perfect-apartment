@@ -231,7 +231,7 @@ nav a:hover{
     column-gap: 10%;
     row-gap: 3%;
     /* width: 65%; */
-    margin: 0 15%;
+    margin: 0 15% auto;
     font-size: 1.25rem;
 }
 
@@ -244,7 +244,7 @@ nav a:hover{
 }
 
 #review-main #card-grid {
-    grid-template-rows: 1fr 200px repeat(6, 1fr);
+    grid-template-rows: 1fr 200px repeat(7, 1fr);
 }
 
 #card-grid h2 {
@@ -402,12 +402,14 @@ footer a:hover{
     }
     footer {
         margin-top: 25px;
-        display: block;
-        align-items: center;
+        grid-template-columns: 100px 1fr;
+        align-items: left;
+    }
+    .footer-logo {
+        align-self: center;
     }
     footer img {
-        width: 200px !important;
-
+        width: 100px !important;
     }
     #hero-msg{
         font-size: .5rem;
