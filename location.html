@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Apartment</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <a class="logo_link" href="index.html">
-            <img id="logo" src="images/logo.png" alt="logo">
+            <img id="logo" src="images/white-logo.png" alt="logo">
         </a>
         <nav>
             <a href="index.html">Home</a>
@@ -25,17 +25,26 @@
     </header>
     <div id="hero">
         <div id="image-box">
-            <div id="color"></div>
             <img src="images/hero-image.jpg">
         </div>
-        <section id="hero-msg">
+        <div id="location-color"></div>
+        <div id="hero-msg">
             <h1>Closest to Campus</h1>
-        </section>
+        </div>
     </div>
-    <main>
+    <main id="location-main">
+        <section id="disclaimer-background">
+            <div id="disclaimer">
+                <p>The collection of community housing options on this website comes from the list available on the university's website. To ensure quality and relevance, it excludes any that are located outside of Rexburg or complexes don't have a website. It is not a comprehensive list.</p>
+                <p class="no-skip">For more community housing options visit </p>
+                <a href="https://www.byui.edu/housing/community-housing">the university's community housing page.</a>
+            </div>
+        </section>
         <section>
-            <h2>Why does location matter?</h2>
-            <p>[paragraph/bullets about driving v. walking, and why being closest to campus is best]</p>
+            <div id="best-header">
+                <h2>Why does location matter?</h2>
+                <p>[paragraph/bullets about driving v. walking, and why being closest to campus is best]</p>
+            </div>
             <div id="card-grid">
                 <section id="liberty-corner" class="card">
                     <a href="https://rexburgstudenthousing.com/new/property/18">Liberty Corner</a>
@@ -81,7 +90,6 @@
                     <p class="price-box">$839 - $1,039</p>
                     <a class="address-box" href="https://www.google.com/maps/place/University+Village+BYU-Idaho/@43.809284,-111.7901802,17z/data=!3m1!4b1!4m5!3m4!1s0x53540b1aaed56695:0xe935f544855b6d69!8m2!3d43.809284!4d-111.7879915?shorturl=1">15 min Walk</a>
                     <p class="review-box">4.1 Stars</p>
-                    <p>[Section about why this is the best]</p>
                 </section>
                 <section id="at-home" class="card">
                     <a href="https://athomerexburg.com/">At Home Rexburg</a>
@@ -105,23 +113,18 @@
         </section>
     </main>
     <footer>
-        <section>
-            <a class="logo_link" href="index.html">
-                <img src="images/logo.png" alt="logo">
-            </a>
+        <a class="footer-logo" href="index.html">
+            <img src="images/white-logo.png" alt="logo">
+        </a>
+        <div id="footer-navigation">
             <p>SITE NAVIGATION</p>
             <a href="index.html">> Home</a>
             <a href="price.html">> Best Price</a>
             <a href="location.html">> Closest to Campus</a>
             <a href="reviews.html">> Highest Reviews</a>
             <a href="sources.html">> Sources</a>
-        </section>
-        <section>
-            <p>The collection of community housing options on this website comes from the list available on the university's website. To ensure quality and relevance, it excluds any that are located outside of Rexburg or complexes don't have a website. It is not a comprehensive list.</p>
-            <p class="no-skip">For more community housing options visit </p>
-            <a href="https://www.byui.edu/housing/community-housing">the university's community housing page.</a>
-        </section>
-        <section>
+        </div>
+        <section id="copyright">
             <p>&copy; 2023 Perfect Apartment. Kaylee Wilding. All Rights Reserved.</p>
         </section>
     </footer>

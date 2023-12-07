@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fira+Sans+Condensed:ital,wght@0,400;1,300&family=Noto+Sans:ital@1&display=swap');
+
 /* 
 COLORS:
 White: #FFFFFF
@@ -7,76 +9,445 @@ Dusty Blue: #29596F
 Light Blue: #98E2EB
 
 FONTS:
-
+font-family: 'Fira Sans', sans-serif;
 */
 
+body {
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
 
 /* Header */
+header{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 183px 1fr;
+    grid-template-rows: 170px 1fr;
+    color: #B1AAA9;
+    margin-top: -10px;
+    border-top: #000000 5px solid;
+}
 nav{
     display: flex;
     justify-content: space-around;
     font-size: 1.9rem;
     font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    align-self: center;
 }
   
 nav a{
     text-align: center;
-    color: #B1AAA9;
+    color: #000000;
     text-decoration: none;
     padding: 35px;
 }
 
 nav a:hover{
-    background-color: #98E2EB;
-    color: #29596F;
-}
-
-header{
-    background-color: #29596F;
-    display: grid;
-    grid-template-columns: 150px auto;
-    color: #B1AAA9;
-    z-index: 2;
+    background-color: rgb(177, 170, 169, 0.4);
+    color: #000000;
 }
 
 #update {
-    width: 100%;
     grid-column: 1/3;
+    grid-row: 2/3;
     text-align: center;
-    color: #B1AAA9;
-    z-index: 2;
+    align-self: center;
+    color: #ffffff;
+    background-color: rgb(41, 89, 111, 0.8);;
+    border: #000000 solid 2px;
+    font-size: 1rem;
+    padding: 0px;
+}
+
+.logo_link {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 #logo {
-    width: 150px;
-    margin-top: 4px;
-    margin-left: 4px;
+    width: 160px;
+    padding-left: 5px;
 }
 
-/* Main */
-#color {
-    background-color: rgb(41, 89, 111, 0.4);
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 200px;
-    left: 0;
+/* Hero */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+}
+
+#image-box {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: -1;
 }
 
 #image-box img {
     z-index: 0;
-    position: absolute;
-    top: 200px;
-    left: 0;
     width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
-#image-box {
+#home-color {
+    background-color: rgb(41, 89, 111, 0.4);
+    z-index: 1;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
+#price-color {
+    background-color: rgba(5, 90, 25, 0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#location-color {
+    background-color: rgba(75, 10, 6, 0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#review-color {
+    background-color: rgba(218, 213, 74, 0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#source-color {
+    background-color: rgba(14, 0, 2, 0.4);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    border: solid 10px #ffffff;
+    z-index: 2;
+    padding: .5rem 3rem;
+    letter-spacing: 3px;
+}
+
+/* Main */
 .no-skip {
     display: inline;
+}
+
+#about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 10%;
+    margin: 5% auto;
+    width: 80%;
+}
+#about {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+}
+#about-box h2 {
+    font-size: 2.5rem;
+}
+
+#about-box p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+#about-img{
+    margin: 0 auto;
+    align-self: center;
+}
+
+#about-img img {
+    grid-column: 2/3;
+    width: 99%;
+    border: #000000 solid 4px;
+}
+#disclaimer-background {
+    background-color: rgb(41, 89, 111, 0.4);
+    padding: 10px;
+}
+
+#disclaimer {
+    background-color: rgb(177, 170, 169, 0.6);
+    color: #000000;
+    padding: 2rem 5rem;
+    border: #000000 solid 2px;
+    width: 60%;
+    margin: 150px auto;
+    font-size: 1.5rem;
+}
+
+#disclaimer a {
+    text-decoration: none;
+    color: #29596F;
+}
+
+#disclaimer a:hover {
+    text-decoration: underline;
+    color: #29596F;
+}
+
+#best-header {
+    width: 50%;
+    margin: 10% auto;
+    font-size: 1.5rem;
+}
+
+#best-header h2{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+/* Cards */
+#card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 200px repeat(4, 1fr);
+    column-gap: 10%;
+    row-gap: 3%;
+    /* width: 65%; */
+    margin: 0 15%;
+    font-size: 1.25rem;
+}
+
+#price-main #card-grid {
+    grid-template-rows: 1fr 200px repeat(4, 1fr);
+}
+
+#location-main #card-grid {
+    grid-template-rows: 1fr 200px repeat(5, 1fr);
+}
+
+#review-main #card-grid {
+    grid-template-rows: 1fr 200px repeat(6, 1fr);
+}
+
+#card-grid h2 {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.card {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5rem;
+    font-size: 1.25rem;
+    border: rgb(177, 170, 169, 0.8) solid 4rem;
+    outline: #000000 solid 2px;
+}
+
+.card a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #29596F;
+}
+
+.card a:hover {
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: #29596F;
+}
+
+.price-box {
+    font-size: 1.25rem !important;
+    background-color: rgb(158, 235, 120);
+    padding: .5rem;
+    border: #000000 solid 2px;
+}
+
+.address-box {
+    font-size: 1.25rem !important;
+    background-color: rgb(223, 70, 70);
+    padding: .5rem 1.5rem;
+    border: #000000 solid 2px;
+    color: #ffffff !important;
+}
+
+.review-box {
+    font-size: 1.25rem !important;
+    background-color: rgb(245, 240, 152);
+    padding: .5rem;
+    border: #000000 solid 2px;
+}
+
+.review-box, .address-box, .price-box {
+    width: 50%;
+    margin: 30px auto;
+}
+
+/* Sources */
+#source-main {
+    background-color: #29596F;
+    padding: 1px;
+}
+
+#spreadsheet {
+    width: 90%;
+    margin: 200px auto 200px;
+}
+
+#works-cited {
+    width: 40%;
+    margin: 0 auto 200px;
+}
+
+iframe {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    border: #29596F 4px solid;
+}
+
+/* Footer */
+footer{
+    background-color: #000000;
+    padding: 25px 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 300px 1fr;
+    column-gap: 10%;
+}
+
+footer p {
+    color: #7FB7BE;
+    font-size: 1.5rem;
+}
+
+footer a{
+    color: #B1AAA9;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.footer-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer-logo img {
+    width: 300px;
+}
+  
+#copyright{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
+    padding: 2rem;
+    background-color: #7797a9;
+    margin-top: 2rem;
+}
+
+#copyright p {
+    color: #000000;
+}
+
+#footer-navigation {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 2rem;
+    display: grid;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    nav a {
+        display: block;
+        padding: .5rem;
+        text-align: left;
+    }
+    #update p {
+        margin: 0 auto;
+        font-size: .75rem !important;
+    }
+    footer {
+        margin-top: 25px;
+        display: block;
+        align-items: center;
+    }
+    footer img {
+        width: 200px !important;
+
+    }
+    #hero-msg{
+        font-size: .5rem;
+        border-width: 4px;
+    }
+    #disclaimer {
+        padding: 5%;
+        margin: 10% auto;
+    }
+    #card-grid {
+        display: block;
+        margin: 0 20%;
+    }
+    .card {
+        margin: 10% auto;
+        border: #B1AAA9 solid 10px;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    .card a {
+        font-size: 1.5rem;
+    }
+    .review-box, .address-box, .price-box {
+        width: fit-content;
+        margin: 30px auto;
+        font-size: 1rem !important;
+        padding: .5rem 1rem;
+    }
+    h2 {
+        font-size: 1.5rem !important;
+        margin-top: 30%;
+    }
+    p, #disclaimer a {
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
+    }
+    #about-box {
+        display: block;
+    }
+    #works-cited {
+        width: 90%;
+    }
 }
