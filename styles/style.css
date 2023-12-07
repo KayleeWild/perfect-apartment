@@ -26,7 +26,6 @@ header{
     grid-template-rows: 70px;
     color: #B1AAA9;
     margin-top: -10px;
-    /* margin-left: -10px; */
     border-top: #000000 5px solid;
     z-index: 3;
 }
@@ -245,24 +244,22 @@ nav a:hover{
 #card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 200px repeat(4, 1fr);
-    column-gap: 10%;
-    row-gap: 3%;
-    /* width: 65%; */
-    margin: 0 15% auto;
+    grid-template-rows: 2fr 200px repeat(3, 1fr);
+    column-gap: 7%;
+    margin: 0 7% auto;
     font-size: 1.25rem;
 }
 
 #price-main #card-grid {
-    grid-template-rows: 1fr 200px repeat(4, 1fr);
+    grid-template-rows: 2fr 200px repeat(3, 1fr);
 }
 
 #location-main #card-grid {
-    grid-template-rows: 1fr 200px repeat(5, 1fr);
+    grid-template-rows: 2fr 200px repeat(4, 1fr);
 }
 
 #review-main #card-grid {
-    grid-template-rows: 1fr 200px repeat(7, 1fr);
+    grid-template-rows: 2fr 200px repeat(5, 1fr);
 }
 
 #card-grid h2 {
@@ -270,6 +267,7 @@ nav a:hover{
     grid-column: 1/3;
     text-align: center;
     font-size: 4.5rem;
+    margin-top: -1rem;
 }
 
 .card {
@@ -280,6 +278,8 @@ nav a:hover{
     font-size: 1.25rem;
     border: rgb(177, 170, 169, 0.8) solid 4rem;
     outline: #000000 solid 2px;
+    height: fit-content;
+    margin: 10% 0 10%;
 }
 
 .card a {
@@ -289,7 +289,6 @@ nav a:hover{
 }
 
 .card a:hover {
-    font-size: 2.5rem;
     text-decoration: underline;
     color: #29596F;
 }
