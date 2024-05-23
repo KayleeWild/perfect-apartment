@@ -210,7 +210,7 @@ nav a:hover{
 }
 
 #disclaimer {
-    background-color: rgb(177, 170, 169, 0.6);
+    background-color: #FFFFFF;
     color: #000000;
     padding: 2rem 5rem;
     border: #000000 solid 2px;
@@ -302,7 +302,7 @@ nav a:hover{
 
 .address-box {
     font-size: 1.25rem !important;
-    background-color: rgb(223, 70, 70);
+    background-color: rgb(152, 52, 52);
     padding: .5rem 1.5rem;
     border: #000000 solid 2px;
     color: #ffffff !important;
