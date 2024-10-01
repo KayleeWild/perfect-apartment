@@ -1,4 +1,4 @@
-**#Perfect Apartment**
+#**Perfect Apartment**
 This is a site I used to organize my research for my English 301 class. It is soley an informational site with virtually no dynamic capabilities. 
 The "sources" tab includes an embedded spreadsheet and bibliography citing my sources. People looking for fast facts should start there. Users looking for more of a blog-style narrative about the best-rating sites should explore the different tabs.
 My research process is detailed below...
